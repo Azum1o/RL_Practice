@@ -12,7 +12,7 @@ import rl_utils
 np.bool8 = np.bool
 
 lr = 2e-3
-num_episodes = 500
+num_episodes = 1000
 hidden_dim = 128
 gamma = 0.98
 epsilon = 0.01

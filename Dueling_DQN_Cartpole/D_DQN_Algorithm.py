@@ -43,7 +43,7 @@ class DQN:
     
         # 寻找最大的q值
     def max_q_value(self,state):
-        state = torch.tensor([state],dtype=float).to(self.device)
+        state = torch.tensor([state],dtype=torch.float).to(self.device)
         return self.q_net(state).max().item()
     
     def update(self,transition_dict):

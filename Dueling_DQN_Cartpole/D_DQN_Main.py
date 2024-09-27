@@ -22,9 +22,10 @@ minimal_size = 500
 batch_size = 64
 device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
 
-env_name = 'CartPole-v0'
+env_name = 'CartPole-v1'
 env = gym.make(env_name)
 
+# 获取状态
 state_dim = env.observation_space.shape[0]
 # 获取动作空间的维度
 action_dim = env.action_space.n
@@ -70,6 +71,7 @@ for i in range(10):
                                             'dones' : d
                                             }
                         agent.update(transition_dict)
+                    
                 # 在一个episode完成后在return_list中添加这一段的return
                 return_list.append(episode_return)
                 

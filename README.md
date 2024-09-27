@@ -16,6 +16,7 @@
 - 基于Cartpole环境的Dueling DQN算法（事实上应该用Pendulum环境）
 - 策略梯度REINFORECE
 - A2C
-学习笔记可见 https://lor1keet.github.io
+学习笔记可见
+https://lor1keet.github.io
 
 持续更新中...
